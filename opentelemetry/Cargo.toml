@@ -28,7 +28,7 @@ pin-project-lite = { workspace = true, optional = true }
 thiserror = { workspace = true }
 
 [target.'cfg(all(target_arch = "wasm32", not(target_os = "wasi")))'.dependencies]
-js-sys = "0.3.63"
+js-sys = { version = "0.3.63", optional = true }
 
 [features]
 default = ["trace"]
